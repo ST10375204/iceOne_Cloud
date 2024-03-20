@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Cost Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Enter the price of the place and the number of day staying below</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal Multiplier</title>
+</head>
+<body>
+    <input type="number" step="any" id="decimalInput" placeholder="Enter a Price of room">
+    <input type="number" id="spinInput" placeholder="Enter a number of days">
+    <button onclick="multiplyDecimal()">Multiply</button>
+    <p id="result"></p>
+
+    <script>
+        function multiplyDecimal() {
+            var decimalValue = parseFloat(document.getElementById("decimalInput").value);
+            var spinValue = parseInt(document.getElementById("spinInput").value);
+            var result = decimalValue * spinValue;
+            document.getElementById("result").innerText = "Total Cost of your stay: R " + result;
+        }
+    </script>
+</body>

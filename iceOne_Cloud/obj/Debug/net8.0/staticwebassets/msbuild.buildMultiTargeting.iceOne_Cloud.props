@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\iceOne_Cloud.props" />
+</Project>
